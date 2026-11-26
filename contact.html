@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanal kontak resmi dan media sosial Aluna Susila Ramadhani - Instagram @butterfliess.o dan TikTok @meltylaff.">
+  <title>Informasi Kontak - Aluna Profile's</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-icon">A</span>
+        Aluna Profile's
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Buka Menu Navigasi">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="profile.html" class="nav-link">Profil Pribadi</a></li>
+        <li><a href="contact.html" class="nav-link active">Informasi Kontak</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Hubungi Saya</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <div class="badge-tag">
+        <i class="fa-solid fa-comments"></i> Pusat Komunikasi & Media Sosial
+      </div>
+      <h1 class="page-title">Informasi Kontak & Jejaring</h1>
+      <p class="page-subtitle">
+        Saluran komunikasi resmi untuk keperluan relasi akademik, kolaborasi proyek teknologi, dan interaksi media sosial.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="contact-grid">
+      <!-- Social Media Columns -->
+      <div class="social-cards-column">
+        <!-- Instagram Card -->
+        <div class="social-card instagram">
+          <div>
+            <div class="social-header">
+              <div class="social-icon-wrapper ig">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="social-meta">
+                <h3>Instagram</h3>
+                <span>@butterfliess.o</span>
+              </div>
+            </div>
+            <p class="social-body">
+              Platform resmi untuk pembaruan visual, kegiatan harian, serta dokumentasi perkembangan minat di bidang teknologi dan pendidikan kejuruan.
+            </p>
+          </div>
+          <a href="https://instagram.com/butterfliess.o" target="_blank" rel="noopener noreferrer" class="social-btn ig-btn">
+            <i class="fa-brands fa-instagram"></i> Kunjungi @butterfliess.o
+            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: auto;"></i>
+          </a>
+        </div>
+
+        <!-- TikTok Card -->
+        <div class="social-card tiktok">
+          <div>
+            <div class="social-header">
+              <div class="social-icon-wrapper tt">
+                <i class="fa-brands fa-tiktok"></i>
+              </div>
+              <div class="social-meta">
+                <h3>TikTok</h3>
+                <span>@meltylaff</span>
+              </div>
+            </div>
+            <p class="social-body">
+              Kanal publikasi konten kreatif, kreasi multimedia, dan aktivitas santai dalam keseharian sebagai pelajar SMK Telkom Malang.
+            </p>
+          </div>
+          <a href="https://tiktok.com/@meltylaff" target="_blank" rel="noopener noreferrer" class="social-btn tt-btn">
+            <i class="fa-brands fa-tiktok"></i> Kunjungi @meltylaff
+            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: auto;"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Formal Message Form Column -->
+      <div class="contact-form-card">
+        <h3>Kirim Pesan Langsung</h3>
+        <p>Gunakan formulir resmi berikut untuk mengirimkan pesan, pertanyaan akademik, maupun tawaran kerja sama.</p>
+
+        <form id="formalContactForm">
+          <div class="form-group">
+            <label for="senderName" class="form-label">Nama Lengkap *</label>
+            <input type="text" id="senderName" class="form-control" placeholder="Contoh: Budi Santoso" required>
+          </div>
+
+          <div class="form-group">
+            <label for="senderEmail" class="form-label">Alamat Email *</label>
+            <input type="email" id="senderEmail" class="form-control" placeholder="nama@instansi.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="messageSubject" class="form-label">Perihal / Subjek Pesan *</label>
+            <input type="text" id="messageSubject" class="form-control" placeholder="Contoh: Kolaborasi Proyek Jaringan Komputer" required>
+          </div>
+
+          <div class="form-group">
+            <label for="messageBody" class="form-label">Uraian Pesan *</label>
+            <textarea id="messageBody" class="form-control" placeholder="Tuliskan isi pesan Anda secara lengkap dan sopan di sini..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Formal
+          </button>
+
+          <!-- Success / Status Alert -->
+          <div id="formAlert" class="form-alert"></div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-nav">
+        <a href="index.html">Beranda</a>
+        <a href="profile.html">Profil Pribadi</a>
+        <a href="contact.html">Kontak & Media Sosial</a>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 Aluna Profile's. Seluruh hak cipta dilindungi undang-undang. Dirancang dengan Light Theme bernuansa kolaborasi kuning dan hijau pastel.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
